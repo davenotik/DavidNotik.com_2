@@ -1,1 +1,1 @@
-import FormContainer from "./components/FormContainer";
+import App from "./components/App";
