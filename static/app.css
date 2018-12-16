@@ -22,10 +22,13 @@ body {
 
 .entry-title {
   font-size: 28px;
+  margin-bottom: 10px;
 }
 
 .entry-body {
-  font-size: 18px;
+  font-size: 0.9375rem;
+  line-height: 1.3em;
+  font-family: "FranklinITCProLight","Helvetica Neue Light","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
 }
 
 .entry-date {
