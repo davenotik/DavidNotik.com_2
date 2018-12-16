@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Header from "./header";
+import css from '../../../static/app.css';
+
 
 class App extends Component {
   constructor() {
