@@ -9,7 +9,7 @@ class Entry extends Component {
     return (
       <div className="entry-container">
         <div className="entry-date">
-          December 15th, 2018
+          May 13th, 2010
         </div>
         <div className="entry-title">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
