@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Header from "./header";
 import css from '../../../static/app.css';
+import Entry from "./entry";
 
 
 class App extends Component {
@@ -17,6 +18,9 @@ class App extends Component {
     return (
       <div className="main-container">
         <Header/>
+        <Entry/>
+        <Entry/>
+        <Entry/>
       </div>
     );
   }
