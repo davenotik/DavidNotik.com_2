@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "React from scratch.",
   "main": "src/client/index.js",
-  "dependencies": {},
+  "dependencies": {
+    "firebase": "^5.7.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
