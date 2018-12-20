@@ -15,10 +15,15 @@ db.settings({timestampsInSnapshots: true});
 // const model = () => {
   let posts = [];
   db.collection('posts').get().then(function(snapshot) {
+    //TODO: React throws "Objects are not valid as a React child"
     snapshot.forEach(function(doc) {
-      console.log(doc.data());
       posts.push(doc.data());
     });
+
+    console.log(posts);
+
+    const wrapper = document.getElementById("root");
+    wrapper ? ReactDOM.render(<App />, wrapper) : false;
   });
 // }
 
@@ -38,6 +43,3 @@ class App extends Component {
 }
 
 export default App;
-
-const wrapper = document.getElementById("root");
-wrapper ? ReactDOM.render(<App />, wrapper) : false;
