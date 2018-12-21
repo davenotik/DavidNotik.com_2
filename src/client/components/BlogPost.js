@@ -12,10 +12,10 @@ class BlogPost extends Component {
           May 13th, 2010
         </div>
         <div className="blog-post-title">
-          {this.props.post.title}
+          {this.props.title}
         </div>
         <div className="blog-post-body">
-          {this.props.post.body}
+          {this.props.body}
         </div>
       </div>
     );

@@ -7,18 +7,18 @@ class BlogList extends Component {
   render() {
     const rows = [];
 
-    // this.props.posts.forEach((post) => {
-    //   rows.push(
-    //     <BlogPost
-    //       title={post.title}
-    //       body={post.body} />
-    //   );
-    // });
+    this.props.posts.forEach((post) => {
+      rows.push(
+        <BlogPost
+          key={post.id}
+          title={post.title}
+          body={post.body} />
+      );
+    });
 
     return (
       <div className="blog-list">
-        {this.props.posts}
-        {/*{rows}*/}
+        {rows}
       </div>
     );
   }

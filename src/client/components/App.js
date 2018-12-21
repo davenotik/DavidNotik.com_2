@@ -12,20 +12,16 @@ const firebaseApp = firebase.initializeApp(fb);
 const db = firebaseApp.firestore();
 db.settings({timestampsInSnapshots: true});
 
-// const model = () => {
-  let posts = [];
-  db.collection('posts').get().then(function(snapshot) {
-    //TODO: React throws "Objects are not valid as a React child"
-    snapshot.forEach(function(doc) {
-      posts.push(doc.data());
-    });
+let posts = [];
 
-    console.log(posts);
-
-    const wrapper = document.getElementById("root");
-    wrapper ? ReactDOM.render(<App />, wrapper) : false;
+db.collection('posts').get().then(function(snapshot) {
+  snapshot.forEach((post) => {
+    posts.push(post.data());
   });
-// }
+
+  const wrapper = document.getElementById("root");
+  wrapper ? ReactDOM.render(<App />, wrapper) : false;
+});
 
 class App extends Component {
   constructor() {
