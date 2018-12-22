@@ -15,8 +15,11 @@ db.settings({timestampsInSnapshots: true});
 let posts = [];
 
 db.collection('posts').get().then(function(snapshot) {
+  //TODO: Find a better way.
   snapshot.forEach((post) => {
-    posts.push(post.data());
+    var postObject = post.data();
+    postObject.id = post.id;
+    posts.push(postObject);
   });
 
   const wrapper = document.getElementById("root");
