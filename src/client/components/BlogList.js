@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import BlogPost from "./BlogPost";
-import firebase from "firebase";
-import {firebase as fb} from "../../../config/config";
 
 class BlogList extends Component {
   render() {
