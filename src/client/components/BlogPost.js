@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Skeleton from 'react-loading-skeleton';
 
 class BlogPost extends Component {
   constructor() {
@@ -12,10 +13,10 @@ class BlogPost extends Component {
           May 13th, 2010
         </div>
         <div className="blog-post-title">
-          {this.props.title}
+          {this.props.title || <Skeleton />}
         </div>
         <div className="blog-post-body">
-          {this.props.body}
+          {this.props.body || <Skeleton count={10}/>}
         </div>
       </div>
     );
