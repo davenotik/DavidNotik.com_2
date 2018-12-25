@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  border-left: solid 20px purple;
 }
 
 .main-title {
@@ -15,7 +14,6 @@ body {
 
 .blog-post-container {
   margin-top: 40px;
-  border-top: solid 8px orange;
   padding-top: 10px;
   width: 500px;
 }

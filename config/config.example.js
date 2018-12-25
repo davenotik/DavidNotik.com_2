@@ -7,4 +7,4 @@ module.exports = {
     storageBucket: "",
     messagingSenderId: ""
   }
-}
+};

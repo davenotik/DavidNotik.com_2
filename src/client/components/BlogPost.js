@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Skeleton from 'react-loading-skeleton';
 
 class BlogPost extends Component {
   constructor() {
