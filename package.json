@@ -5,7 +5,8 @@
   "main": "src/client/index.js",
   "dependencies": {
     "firebase": "^5.7.0",
-    "react-loading-skeleton": "^1.0.0"
+    "react-loading-skeleton": "^1.0.0",
+    "react-render-html": "^0.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.0",
@@ -18,7 +19,7 @@
     "html-webpack-plugin": "^3.2.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "react-dom": "^16.6.3",git add
     "style-loader": "^0.23.1",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2",
