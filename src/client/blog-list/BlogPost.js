@@ -1,11 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import renderHTML from 'react-render-html';
+import Skeleton from 'react-loading-skeleton';
 
-class BlogPost extends Component {
-  constructor() {
-    super();
-  }
-
+export default class BlogPost extends React.Component {
   render() {
     return (
       <div className="blog-post-container">
@@ -22,5 +19,3 @@ class BlogPost extends Component {
     );
   }
 }
-
-export default BlogPost;
