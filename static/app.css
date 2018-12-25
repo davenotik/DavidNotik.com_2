@@ -6,10 +6,12 @@ body {
   font-family: Georgia, serif;
   font-size: 40px;
   margin-bottom: 20px;
+  color: #0079e8;
 }
 
 .main-container {
   padding: 30px;
+  border-top: solid 17px #22a522;
 }
 
 .blog-list {
