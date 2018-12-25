@@ -12,6 +12,10 @@ body {
   padding: 30px;
 }
 
+.blog-list {
+  width: 400px;
+}
+
 .blog-post-container {
   margin-top: 40px;
   padding-top: 10px;
@@ -24,9 +28,9 @@ body {
 }
 
 .blog-post-body {
-  font-size: 0.9375rem;
-  line-height: 1.3em;
-  font-family: "FranklinITCProLight","Helvetica Neue Light","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.4em;;
+  font-family: Georgia, serif;
 }
 
 .blog-post-date {
