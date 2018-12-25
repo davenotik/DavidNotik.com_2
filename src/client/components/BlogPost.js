@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import renderHTML from 'react-render-html';
 
 class BlogPost extends Component {
   constructor() {
@@ -15,7 +16,7 @@ class BlogPost extends Component {
           {this.props.title || <Skeleton />}
         </div>
         <div className="blog-post-body">
-          {this.props.body || <Skeleton count={10}/>}
+          {renderHTML(this.props.body) || <Skeleton count={10}/>}
         </div>
       </div>
     );
