@@ -10,9 +10,9 @@ export default function BlogListModel(db) {
       map(snapshotToObjectList), // Turn those 'nasty' snapshot things into nice [{title, ...}, ...] form.
       delay(3000), // Add some delay to see skeletons.
       startWith([]) // Initial value for posts observable.
-    )
+    );
 
   return posts.pipe(
     map(posts => <BlogListView posts={posts} />)
-  )
+  );
 };

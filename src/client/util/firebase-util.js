@@ -1,9 +1,9 @@
 export const snapshotToObjectList = snapshot => {
-  const list = []
+  const list = [];
   snapshot.forEach(entry => {
     const obj = entry.data();
     obj.id = entry.id;
     list.push(obj);
-  })
-  return list
-}
+  });
+  return list;
+};

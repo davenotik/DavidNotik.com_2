@@ -15,5 +15,5 @@ export default function AppModel() {
 
   return blogList.pipe(
     map(blogList => <AppView blogList={blogList} />)
-  )
+  );
 }
