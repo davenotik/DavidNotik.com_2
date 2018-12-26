@@ -39,3 +39,30 @@ body {
   font-family: "Courier New", serif;
   font-size: 15px;
 }
+
+.nugget-list {
+  width: 400px;
+}
+
+.nugget-container {
+  margin-top: 40px;
+  padding: 10px 10px;
+  width: 500px;
+  border: solid 1px green;
+}
+
+.nugget-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.nugget-body {
+  font-size: 0.9rem;
+  line-height: 1.4em;;
+  font-family: Georgia, serif;
+}
+
+.nugget-date {
+  font-family: "Courier New", serif;
+  font-size: 15px;
+}
