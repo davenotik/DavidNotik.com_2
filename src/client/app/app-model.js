@@ -12,12 +12,14 @@ const fb = firebase.initializeApp(config.firebase);
 const db = fb.firestore();
 db.settings({timestampsInSnapshots: true});
 
+const AppViewFactory = React.createFactory(AppView)
+
 export default function AppModel() {
   const blogList = BlogListModel(db);
   const nuggetList = NuggetListModel(db);
 
   return combineLatest(blogList, nuggetList)
     .pipe(
-      map(([blogList, nuggetList]) => <AppView nuggetList={nuggetList} blogList={blogList} />)
+      map(([blogList, nuggetList]) => AppViewFactory({blogList, nuggetList}))
     );
 }
