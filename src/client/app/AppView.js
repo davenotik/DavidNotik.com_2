@@ -7,10 +7,7 @@ export default class AppView extends React.Component {
       <div className="main-container">
         <Header/>
         <div>
-          {this.props.blogList}
-        </div>
-        <div>
-          {this.props.nuggetList}
+          {this.props.components}
         </div>
       </div>
     );
