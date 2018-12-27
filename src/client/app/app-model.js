@@ -16,8 +16,8 @@ export default function AppModel() {
   const blogList = BlogListModel(db);
   const nuggetList = NuggetListModel(db);
 
-  const combined = combineLatest(blogList, nuggetList);
-
-  return combined.pipe(map((components) => <AppView
-    components={components}  /> ));
+  return combineLatest(blogList, nuggetList)
+    .pipe(
+      map(([blogList, nuggetList]) => <AppView nuggetList={nuggetList} blogList={blogList} />)
+    );
 }
