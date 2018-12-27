@@ -7,6 +7,7 @@ import 'firebase/firestore';
 import * as config from "../../../config/config";
 import { map } from 'rxjs/operators';
 import { combineLatest } from 'rxjs';
+import { combineTemplate } from '../util/rx-util'
 
 const fb = firebase.initializeApp(config.firebase);
 const db = fb.firestore();
@@ -18,8 +19,12 @@ export default function AppModel() {
   const blogList = BlogListModel(db);
   const nuggetList = NuggetListModel(db);
 
-  return combineLatest(blogList, nuggetList)
-    .pipe(
-      map(([blogList, nuggetList]) => AppViewFactory({blogList, nuggetList}))
-    );
+  return combineTemplate({
+    asd: 5,
+    anotherThing: 'asd',
+    blogList,
+    nuggetList
+  }).pipe(
+    map(props => AppViewFactory(props))
+  );
 }

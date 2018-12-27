@@ -5,6 +5,7 @@
   "main": "src/client/index.js",
   "dependencies": {
     "firebase": "^5.7.0",
+    "ramda": "^0.26.1",
     "react-loading-skeleton": "^1.0.0",
     "react-render-html": "^0.6.0",
     "rxjs": "^6.3.3"
