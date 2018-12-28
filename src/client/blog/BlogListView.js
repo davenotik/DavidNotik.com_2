@@ -1,6 +1,6 @@
 import React from "react";
 import BlogPost from "./BlogPost";
-import Skeleton from 'react-loading-skeleton';
+import SkeletonBlock from "../skeleton/SkeletonBlock";
 
 export default class BlogListView extends React.Component {
   render() {
@@ -20,17 +20,4 @@ export default class BlogListView extends React.Component {
       </div>
     );
   }
-}
-
-function SkeletonBlock() {
-  return (
-    <div>
-      <br/><br/>
-      <Skeleton count={10}/>
-      <br/><br/>
-      <Skeleton count={5}/>
-      <br/><br/>
-      <Skeleton count={10}/>
-    </div>
-  );
 }

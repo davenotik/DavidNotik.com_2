@@ -66,3 +66,7 @@ body {
   font-family: "Courier New", serif;
   font-size: 15px;
 }
+
+.skeleton-block {
+  width: 500px;
+}
