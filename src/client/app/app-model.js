@@ -6,7 +6,6 @@ import firebase from "firebase/app";
 import 'firebase/firestore';
 import * as config from "../../../config/config";
 import { map } from 'rxjs/operators';
-import { combineLatest } from 'rxjs';
 import { combineTemplate } from '../util/rx-util'
 
 const fb = firebase.initializeApp(config.firebase);
