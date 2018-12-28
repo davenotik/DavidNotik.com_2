@@ -4,9 +4,9 @@ import Skeleton from 'react-loading-skeleton';
 
 export default class BlogListView extends React.Component {
   render() {
-    const content = this.props.posts.length === 0
+    const content = this.props.items.length === 0
       ? <SkeletonBlock/>
-      : this.props.posts.map(post =>
+      : this.props.items.map(post =>
         <BlogPost
           key={post.id}
           title={post.title}
