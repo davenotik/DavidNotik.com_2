@@ -19,7 +19,7 @@ body {
 }
 
 .blog-post-container {
-  margin-top: 40px;
+  margin-bottom: 40px;
   padding-top: 10px;
   width: 500px;
 }
@@ -45,10 +45,9 @@ body {
 }
 
 .nugget-container {
-  margin-top: 40px;
-  padding: 10px 10px;
+  margin-bottom: 40px;
+  padding-top: 10px;
   width: 500px;
-  border: solid 1px green;
 }
 
 .nugget-title {
